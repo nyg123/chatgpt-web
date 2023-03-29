@@ -35,6 +35,7 @@ func (c *ChatController) Index(ctx *gin.Context) {
 
 // Completion 回复
 func (c *ChatController) Completion(ctx *gin.Context) {
+	time.Sleep(3 * time.Second)
 	var request gogpt.ChatCompletionRequest
 	err := ctx.BindJSON(&request)
 	if err != nil {
