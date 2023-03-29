@@ -148,6 +148,7 @@ function App() {
   function onGenCode(question: string) {
     if (token <= 0) {
         toast.fail('本次会话已结束，请重新开始')
+        setPercentage(0)
         return
     }
     question = clearQuestion(question)
