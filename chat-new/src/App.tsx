@@ -128,6 +128,7 @@ function App() {
       messages.splice(0)
       prependMsgs(messages)
       placeholder = '请输入...'
+      token = 300
     }
     if (item.name === '复制会话') {
       if (messages.length <= 1) {
